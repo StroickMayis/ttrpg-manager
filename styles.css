@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-bg-color-lighter: rgb(60,60,60);
+    --main-bg-color-light: rgb(50,50,50);
+    --main-bg-color: rgb(40,40,40);
+    --main-bg-color-dark: rgb(30,30,30);
+    --main-bg-color-darker: rgb(20,20,20);
+}
+
+body {
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    width: 100%;
+    align-items: center;
+}
+
+.fullSiteWidth {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#siteBarWide {
+    background-color: var(--main-bg-color-darker);
+    border-bottom: 1px solid var(--main-bg-color-lighter);
+}
+
+#menuBarWide {
+    background-color: var(--main-bg-color-dark);
+    padding: 6px;
+}
+
+#logo {
+    width: 200px;
+}
+
+#siteBar,
+#menu {
+    flex: 0 1 1200px;
+}
+
+#menu {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 35px;
+}
+
+#menu div {
+    padding: 10px;
+    /* border: 1px solid rgb(60,60,60); */
+    flex: 0 1 auto;
+    
+}
+
+#siteBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#siteBar div {
+    padding: 10px;
+    /* border: 1px solid rgb(60,60,60); */
+    flex: 1 1 auto;
+}
+
+#campaignMenuOverview {
+    display: flex;
+}
+
+#campaignImage {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#campaignMenuOverview #campaignName {
+    padding: 0;
+    padding-left: 10px;
+}
+
+#campaignMenuOverview #changeCampaign {
+    padding: 0;
+    padding-left: 16px;
+    font-size: small;
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 160, 160);
+}
+
+#campaignMenuOverview #campaignNameContainer {
+    padding: 0;
+}
+
+#menu #campaignMenuOverview {
+    padding: 5px;
+}
