@@ -17,6 +17,7 @@ body {
     background-color: var(--main-bg-color);
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 header {
@@ -25,6 +26,17 @@ header {
     font-size: large;
     width: 100%;
     align-items: center;
+}
+
+main {
+    display: flex;
+    font-size: large;
+    width: 100%;
+    justify-content: center;
+}
+
+footer {
+
 }
 
 .fullSiteWidth {
@@ -108,4 +120,80 @@ header {
 
 #menu #campaignMenuOverview {
     padding: 5px;
+}
+
+.listSearch {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 35px; 
+    border: 1px solid var(--main-bg-color-lighter);
+    background-color: var(--main-bg-color-dark);
+}
+
+.list {
+    flex-wrap: wrap;
+    margin-top: 10px;
+    padding: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px; 
+    border: 1px solid var(--main-bg-color-lighter);
+    background-color: var(--main-bg-color-dark);
+}
+
+.content {
+    flex: 1 1 1200px; 
+    max-width: 1200px;
+    padding: 20px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+.campaignCard {
+    display: flex;
+    padding: 20px;
+    border: 1px solid var(--main-bg-color-lighter);
+}
+
+.campaignCardFlex {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.campaignCardFlex :first-child {
+    margin-right: 40px;
+}
+
+#campaignCardInfoContainer {
+    font-size: large;
+    margin-left: 10px;
+}
+
+#campaignCardImageContainer img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+#campaignCardImageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#campaignCardName {
+    font-size: x-large;
+    margin-bottom: 4px;
+}
+
+#campaignCardEdit,
+#campaignCardSelect {
+    font-size: medium;
+    margin-top: 4px;
 }
