@@ -8,26 +8,27 @@
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body id="logIn">
+    <a href="../index.html" id="logInPageHomeLogoLink"><img src="../images/logo.png" alt="WarHelm Logo"></a>
     <div class="logInContainer">
+        <!-- <img src="../images/logo.png" alt="WarHelm Logo"> -->
         <form action="" method="post">
             <legend for="">Log In</legend>
             <div id="logInSubContainer">
-                <div>
-                    <label id="emailLabel" for="email">Email:  </label>
-                    <input type="email" id="email" name="email" placeholder="yourname@example.com">
+                <!-- NOTE: MAKE LABELS GO INSIDE OF INPUT -->
+                <div id="emailContainer" class="textInputContainer">
+                    <input type="email" id="email" name="email" placeholder="Email">
                 </div>
-                <div>
-                    <label for="password">Password:  </label>
-                    <input type="password" id="password" name="password">
+                <div id="passwordContainer" class="textInputContainer">
+                    <input type="password" id="password" name="password" placeholder="Password">
                 </div>
                 <div>
                     <a id="forgotPasswordLink" href="./forgotPassword.html">Forgot Password?</a>
                 </div>
                 <div id="logInButtons">
-                    <button>Log In</button>
+                    <button type="submit">Log In</button>
                 </div>
-                <div>
-                    <a id="createAccountLink" href="createAccount.html">Create Account</a>
+                <div class="logInFormText">
+                    New Here? <br><a href="createAccount.html">Create an Account</a>
                 </div>
             </div>
         </form>

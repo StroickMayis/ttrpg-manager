@@ -3,11 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WarHelm | Create Account</title>
+    <title>WarHelm | Log In</title>
     <script src="../scripts.js" defer></script>
     <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
-    <div class="container"></div>
+<body id="logIn">
+    <a href="../index.html" id="logInPageHomeLogoLink"><img src="../images/logo.png" alt="WarHelm Logo"></a>
+    <div class="logInContainer">
+        
+        <form action="" method="post">
+            <legend for="">Welcome!</legend>
+            <div id="logInSubContainer">
+                <!-- NOTE: MAKE LABELS GO INSIDE OF INPUT -->
+                <div id="emailContainer" class="textInputContainer">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div id="userNameContainer" class="textInputContainer">
+                    <input type="text" id="userName" name="userName" placeholder="Username" maxlength="30" required>
+                </div>
+                <div id="passwordContainer" class="textInputContainer">
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+                <div id="logInButtons">
+                    <button type="submit">Create Account</button>
+                </div>
+                <div class="logInFormText">
+                    Already have an account? <br><a href="logIn.html">Log In</a>
+                </div>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
