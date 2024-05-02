@@ -7,18 +7,9 @@
 }
 
 @font-face {
-    font-family: 'BlackChancery';
-    src: url('./fonts/BlackChancery.woff2') format('woff2'),
-        url('./fonts/BlackChancery.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Dungeon';
-    src: url('./fonts/Dungeon.woff2') format('woff2'),
-        url('./fonts/Dungeon.woff') format('woff');
+    font-family: 'Papyrus';
+    src: url('./fonts/Papyrus-Regular.woff2') format('woff2'),
+        url('./fonts/Papyrus-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -259,10 +250,10 @@ main {
 
 legend {
     color: white;
-    font-size: 8em;
+    font-size: 6em;
     text-shadow: 0px 2px 10px black;
-    font-family:'Dungeon';
-    margin-bottom: 16px;
+    font-family:'Papyrus';
+    margin-bottom: 24px;
 }
 
 .logInSubContainer {
