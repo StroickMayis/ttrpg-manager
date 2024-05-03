@@ -2,6 +2,8 @@ const createAccountButton = document.querySelector("#createAccountButton");
 const createAccountPasswordOne = document.querySelector("#createAccountPasswordOne");
 const createAccountPasswordTwo = document.querySelector("#createAccountPasswordTwo");
 const passwordsDoNotMatchMessageContainer = document.querySelector("#passwordsDoNotMatchMessageContainer");
+const passwordViewerIconOne = document.querySelector("#passwordViewerIconOne");
+const passwordViewerIconTwo = document.querySelector("#passwordViewerIconTwo");
 let passwordsDoNotMatchMessage;
 let isFormSubmissionValid = false;
 
@@ -10,6 +12,13 @@ createAccountPasswordOne.addEventListener("input", () => {
 });
 createAccountPasswordTwo.addEventListener("input", () => {
     validate();
+});
+
+passwordViewerIconOne.addEventListener("click", (e) => {
+    showPassword(e);
+});
+passwordViewerIconTwo.addEventListener("click", (e) => {
+    showPassword(e);
 });
 
 function validatePassword () {
@@ -38,4 +47,24 @@ function validate () {
     }  else {
         createAccountButton.disabled = false;
     }
+}
+
+function showPassword (event) {
+    switch (event.target.id) {
+        case "passwordViewerIconOne":
+            if (createAccountPasswordOne.type == "password") {
+                createAccountPasswordOne.type = "text";
+            } else {
+                createAccountPasswordOne.type = "password";
+            }
+        break;
+        case "passwordViewerIconTwo":
+            if (createAccountPasswordTwo.type == "password") {
+                createAccountPasswordTwo.type = "text";
+            } else {
+                createAccountPasswordTwo.type = "password";
+            }
+        break;
+    }
+    
 }

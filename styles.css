@@ -348,3 +348,10 @@ button {
     margin-left: 120px;
     font-size: .9em;
 }
+
+#passwordContainer .passwordViewerIcon {
+    position: absolute;
+    width: 20px;
+    margin-left: 215px;
+    margin-top: 11px;
+}
