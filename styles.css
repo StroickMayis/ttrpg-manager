@@ -221,8 +221,8 @@ main {
 #logIn {
     background-image: url("./images/loginBackground.png");
     background-repeat: no-repeat;
-    background-size: 100dvw;
-    background-position: top;
+    background-size: max(100dvh*2.05, 100dvw);
+    background-position:center;
     height: 100%;
     width: 100%;
     position: relative;
