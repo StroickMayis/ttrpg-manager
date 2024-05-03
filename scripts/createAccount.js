@@ -2,6 +2,7 @@ const createAccountButton = document.querySelector("#createAccountButton");
 const createAccountPasswordOne = document.querySelector("#createAccountPasswordOne");
 const createAccountPasswordTwo = document.querySelector("#createAccountPasswordTwo");
 const passwordsDoNotMatchMessageContainer = document.querySelector("#passwordsDoNotMatchMessageContainer");
+
 const passwordViewerIconOne = document.querySelector("#passwordViewerIconOne");
 const passwordViewerIconTwo = document.querySelector("#passwordViewerIconTwo");
 let passwordsDoNotMatchMessage;
@@ -20,6 +21,7 @@ passwordViewerIconOne.addEventListener("click", (e) => {
 passwordViewerIconTwo.addEventListener("click", (e) => {
     showPassword(e);
 });
+
 
 function validatePassword () {
     if (!passwordsDoNotMatchMessage && createAccountPasswordOne.value !== createAccountPasswordTwo.value) {
