@@ -42,7 +42,6 @@ function validatePassword () {
 }
 
 function validate () {
-    console.log("VALIDATE ACTIVATED")
     validatePassword();
     if (!isFormSubmissionValid) {
         createAccountButton.disabled = true;
