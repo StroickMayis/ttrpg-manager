@@ -17,9 +17,11 @@ createAccountPasswordTwo.addEventListener("input", () => {
 
 passwordViewerIconOne.addEventListener("click", (e) => {
     showPassword(e);
+    changePasswordViewerIconOne();
 });
 passwordViewerIconTwo.addEventListener("click", (e) => {
     showPassword(e);
+    changePasswordViewerIconTwo();
 });
 
 
@@ -68,4 +70,20 @@ function showPassword (event) {
         break;
     }
     
+}
+
+function changePasswordViewerIconOne() {
+    if (passwordViewerIconOne.src == "file:///home/erik/repos/ttrpg-manager/images/passwordEyeVisible.png") {
+        passwordViewerIconOne.src = "../images/passwordEyeInvisible.png";
+    } else {
+        passwordViewerIconOne.src = "../images/passwordEyeVisible.png";
+    }
+}
+
+function changePasswordViewerIconTwo() {
+    if (passwordViewerIconTwo.src == "file:///home/erik/repos/ttrpg-manager/images/passwordEyeVisible.png") {
+        passwordViewerIconTwo.src = "../images/passwordEyeInvisible.png";
+    } else {
+        passwordViewerIconTwo.src = "../images/passwordEyeVisible.png";
+    }
 }
