@@ -15,8 +15,29 @@ module.exports = {
     mode: `development`,
     plugins: [
         new HtmlWebpackPlugin({
-            template: './src/index.html',
-            title: 'Output Management',
+            filename: `pages/index.html`,
+            template: './src/pages/index.html',
+            chunks: [`index`]
+        }),
+        new HtmlWebpackPlugin({
+            filename: `pages/campaignList.html`,
+            template: './src/pages/campaignList.html',
+            // chunks: [`about`]
+        }),
+        new HtmlWebpackPlugin({
+            filename: `pages/createAccount.html`,
+            template: './src/pages/createAccount.html',
+            // chunks: [`about`]
+        }),
+        new HtmlWebpackPlugin({
+            filename: `pages/forgotPassword.html`,
+            template: './src/pages/forgotPassword.html',
+            // chunks: [`about`]
+        }),
+        new HtmlWebpackPlugin({
+            filename: `pages/logIn.html`,
+            template: './src/pages/logIn.html',
+            // chunks: [`about`]
         }),
     ],
     module: {
